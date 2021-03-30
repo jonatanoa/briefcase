@@ -17,11 +17,20 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
     constructor() {
         super(); //se llama super para invocar al constructor de la clase de componente padre, si no se pone, genera error por que el this.state no se ha definido
         this.state = {displayBio: false};//displayBio sera un valoir que controla si debemos mostrar  o no esta nueva seccion.
+
+        console.log ('Component this', this);
+
+        this.toggleDisplaybio = this.toggleDisplaybio.bind (this); //this es un objeto global
     }
 
-    readMore() {
-        this.setState({displayBio = true})
+
+  
+
+    toggleDisplaybio () {
+        this.setState({displayBio: !this.state.displayBio}); //stestate cambia el estado de displaybio porque display bio es const.
     }
+
+
 
     render() {
             //ESTO Ya no se necesita porque el if se puso arriba con el signo (?)
@@ -40,10 +49,11 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
                             <p>I live in Colombia, and code  every day</p> 
                             <p>My favorite language is JavaScript, and i think Reack.js is awesome</p>
                             <p>Besides coding, i also love music, the drew and arts. </p>
+                            <button onClick={this.toggleDisplaybio}>Show less</button>
                         </div>
                     ) : (
                         <div>
-                            <button onClick={this.readMore}>Read more</button>
+                            <button onClick={this.toggleDisplaybio}>Read more</button> 
                         </div>
                     )
                 } 
