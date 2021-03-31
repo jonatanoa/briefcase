@@ -14,19 +14,22 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
     //linea 25: my lenguaje favorito es javascript y creo que react.js, es asombroso.
     //linea 26: ademas de codificar, tambian amo la musica, el dibujo y las artes.
     //linea 34: se exporta a aca la variable para que el texto dentro de bio aparezca aca.
-    constructor() {
-        super(); //se llama super para invocar al constructor de la clase de componente padre, si no se pone, genera error por que el this.state no se ha definido
-        this.state = {displayBio: false};//displayBio sera un valoir que controla si debemos mostrar  o no esta nueva seccion.
 
-        console.log ('Component this', this);
+    state = {displayBio: false}
 
-        this.toggleDisplaybio = this.toggleDisplaybio.bind (this); //this es un objeto global
-    }
+    // constructor() {
+    //     super(); //se llama super para invocar al constructor de la clase de componente padre, si no se pone, genera error por que el this.state no se ha definido
+    //     this.state = {displayBio: false};//displayBio sera un valoir que controla si debemos mostrar  o no esta nueva seccion.
+
+    //     console.log ('Component this', this);
+
+    //     this.toggleDisplaybio = this.toggleDisplaybio.bind (this); //this es un objeto global
+
+    //     this.toggleDisplaybio = ()=> { ... };
+    // }
 
 
-  
-
-    toggleDisplaybio () {
+    toggleDisplaybio = ()=> {
         this.setState({displayBio: !this.state.displayBio}); //stestate cambia el estado de displaybio porque display bio es const.
     }
 
