@@ -15,7 +15,7 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
     //linea 26: ademas de codificar, tambian amo la musica, el dibujo y las artes.
     //linea 34: se exporta a aca la variable para que el texto dentro de bio aparezca aca.
 
-    state = {displayBio: false}
+    state = {displayBio: false} //esta es la forma resumida
 
     // constructor() {
     //     super(); //se llama super para invocar al constructor de la clase de componente padre, si no se pone, genera error por que el this.state no se ha definido
@@ -33,13 +33,10 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
         this.setState({displayBio: !this.state.displayBio}); //stestate cambia el estado de displaybio porque display bio es const.
     }
 
-
-
     render() {
             //ESTO Ya no se necesita porque el if se puso arriba con el signo (?)
         // if (!this.state.displayBio) { // la admiracion (!) convierte a false todo el contexto adentro,
         //     bio = null; //cuando react ve un valor nulo dentro de jsx decide omitir eso  yno genera nada
-
         // }
         return (
             <div>
