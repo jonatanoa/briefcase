@@ -4,6 +4,9 @@ import PROJECTS from './data/projects';
 class Project extends Component {
     render() {
         console.log('this.props', this.props);
+
+        const {title, image, description, link}=this.props.object; 
+
         return (
             <div>{this.props.project.title}</div>
         )
@@ -11,7 +14,7 @@ class Project extends Component {
 }
 
 class Projects extends Component {
-    //linea 9: proyectos desctacados
+
     render () {
         return (
             <div>
