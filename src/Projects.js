@@ -1,6 +1,15 @@
 import React, { Component} from 'react';
 import PROJECTS from './data/projects';
 
+class Project extends Component {
+    render() {
+        console.log('this.props', this.props);
+        return (
+            <div>{this.props.project.title}</div>
+        )
+    }
+}
+
 class Projects extends Component {
     //linea 9: proyectos desctacados
     render () {
@@ -10,9 +19,9 @@ class Projects extends Component {
                 <div>
                     {
                     
-                        PROJECTS.map((PROJECTS)=> {//esto es el equivalente a lo que tengo abajo.
+                        PROJECTS.map(PROJECT=> {//esto es el equivalente a lo que tengo abajo.
                             return (//Cuando un elemento de React, muestra más de un mismo tipo de elemento, debe poder identificar qué elementos es cual, para poder actualizarlo correctamente. El Key debe de ser un valor único en la colección y se utiliza por lo general el ID o un campo de los ítems que sea único
-                                <div key={PROJECTS.id}>{PROJECTS.title}</div> //PROJECTS.title, es para que en el navegador se muestren los titulos. 
+                                <Project key={PROJECT.id} project={PROJECT}/> //PROJECTS.title, es para que en el navegador se muestren los titulos. 
                             );
                         })
                     
