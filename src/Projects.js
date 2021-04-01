@@ -5,10 +5,15 @@ class Project extends Component {
     render() {
         console.log('this.props', this.props);
 
-        const {title, image, description, link}=this.props.object; 
+        const { title, image, description, link } = this.props.project; 
 
         return (
-            <div>{this.props.project.title}</div>
+            <div>
+                <h3>{title}</h3>
+                <img src={image} alt='profile'/> 
+                <p>{description}</p>
+                <a href={link}>{link}</a>
+            </div>
         )
     }
 }
