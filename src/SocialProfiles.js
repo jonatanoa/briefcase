@@ -2,15 +2,15 @@ import React, {Component}from 'react';
 import SOCIAL_PROFILES from './data/socialProfiles';
 
 
-class SocialProfiles extends Component{
+class SocialProfile extends Component{
     render(){
-        const {link, image} = this.props.socialProfiles;
+        const {link, image} = this.props.socialProfile;
         return (
-            <div>
-                <a href={link}>
-                    <img src={image} alt='social-profile'/>
+            <span>
+                <a href={link} target="_new">
+                    <img src={image} alt='social-profile' style={{width: 35,margin: 10}}/>
                 </a>
-            </div>
+            </span>
         )
     }
 }
@@ -22,8 +22,8 @@ class SocialProfiles extends Component {
                 <h2>Contact me</h2>
                 <div>
                     {
-                        SOCIAL_PROFILES.map(SOCIAL_PROFILES => {
-                            return <SocialProfiles key={SOCIAL_PROFILES.id} socialProfiles={SOCIAL_PROFILES}/>
+                        SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
+                            return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE}/>;
                         })
                     }
                 </div>
