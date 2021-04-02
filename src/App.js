@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
@@ -60,6 +61,8 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
                 } 
                 <hr/>
                 <Projects/>
+                <hr/>
+                <SocialProfiles/>
             </div>
         )
     }
