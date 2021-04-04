@@ -26,7 +26,9 @@ const PROJECTS = [
         link: "https://github.com/jonatanparamosoftware/briefcase",
         image: project3
 
-    }
+    },
+
+    
 
 ];
 
