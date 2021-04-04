@@ -4,6 +4,8 @@ body {
     font-size: 1.26rem;
     padding: 2.5%;
     font-family: 'Josefin Sans', sans-serif;
-    
+}
 
+.profile {
+    width: 13.5rem;   
 }

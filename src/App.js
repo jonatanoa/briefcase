@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import './index.css';
-import profile from './assets/perfil.jpg';
+import profile from './assets/perfil1.png';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
