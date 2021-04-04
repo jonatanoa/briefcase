@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import './index.css';
+import profile from './assets/perfil.jpg';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
@@ -43,6 +44,7 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
         // }
         return (
             <div>
+                <img src={profile} alt="Profile" className="profile"/>
                 <h1>Hello</h1>
                 <p>My name is Jonatan. I am developer. </p>
                 <p>I 'm always looking forward to working on meaningful proyects.</p>
