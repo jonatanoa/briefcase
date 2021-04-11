@@ -3,6 +3,7 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import './index.css';
 import profile from './assets/perfil1.png';
+import Title from './Title';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
@@ -46,7 +47,8 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
             <div>
                 <img src={profile} alt="Profile" className="profile"/>
                 <h1>Hello</h1>
-                <p>My name is Jonatan. I am developer. </p>
+                <p>My name is Jonatan.</p>
+                <Title/>
                 <p>I 'm always looking forward to working on meaningful proyects.</p>
                 {
                     this.state.displayBio ?(
