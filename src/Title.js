@@ -8,5 +8,16 @@ const TITLES = [
 ]
 
 class Title extends Component {
-    
+    state = {titleIndex: 0};
+
+    render () {
+        const title= TITLE[this.state.titleIndex];
+
+        return (
+            <p>I am {title}</p>
+        )
+    }
 }
+
+
+export default  Title;
