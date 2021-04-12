@@ -16,7 +16,7 @@ class Title extends Component {
         this.animateTitles();
     }
 
-    componentWillUnmount (){
+    componentWillUnmount (){ //hace que el elemento agregado  a esta funcion, desaparasca dependiento del estado si es true o false, en este caso nos dirigimos a App.js y lo agregamos en displayBio.
         console.log('title component will unmount')
     }
 
