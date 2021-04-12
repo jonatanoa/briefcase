@@ -17,7 +17,7 @@ class Title extends Component {
     }
 
     componentWillUnmount (){
-        colsole.log('title component will unmount')
+        console.log('title component will unmount')
     }
 
     animateTitles =()=> {
