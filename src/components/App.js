@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Projects from '../components/Projects';
-import SocialProfiles from '../components/SocialProfiles';
+import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
 import '../index.css';
 import profile from '../assets/perfil1.png';
-import Title from '../components/Title';
+import Title from './Title';
+import Jokes from './Jokes';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
@@ -68,6 +69,8 @@ class App extends Component { //creamos una clase llamada App la cual sera llama
                 <Projects/>
                 <hr/>
                 <SocialProfiles/>
+                <hr/>
+                <Jokes/>
             </div>
         )
     }
