@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
-import SocialProfiles from './SocialProfiles';
-import './index.css';
-import profile from './assets/perfil1.png';
-import Title from './Title';
+import Projects from '../components/Projects';
+import SocialProfiles from '../components/SocialProfiles';
+import '../index.css';
+import profile from '../assets/perfil1.png';
+import Title from '../components/Title';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
