@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import './index.css';
 
 ReactDOM.render(<App/>, document.getElementById('root')); //<App/> es un etiqueta creada desde la clase que creams en App.js. se puede usar asi tambien <App></App>
 
