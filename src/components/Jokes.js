@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 
-const Joke = ({joke}) => {
-    const {setup, punchline} =joke;
-
-    return <p>{setup} <em>{punchline}</em></p>
-}
+const Joke = ({joke: {setup, punchline}}) => (
+    <p style={{margin: 30}}>{setup} <em>{punchline}</em></p>
+)
 
 export default class Jokes extends Component {
 
@@ -24,7 +22,6 @@ export default class Jokes extends Component {
 
     render() {
 
-        const {setup, punchline} = this.state.joke;
         return (
             <div>
                 <h2>highligthted joke</h2>
@@ -32,7 +29,7 @@ export default class Jokes extends Component {
                 <hr/>
                 <h3>Want ten new jokes? </h3>
                 <button onClick={this.fetchJokes}>Click me!</button>
-                {this.state.jokes.map (joke =>  (<joke key={joke.id} joke={joke}/>))}
+                {this.state.jokes.map (joke =>  (<Joke key={joke.id} joke={joke}/>))}
             </div>
         )
     }
