@@ -5,6 +5,21 @@ import './index.css';
 
 ReactDOM.render(<App/>, document.getElementById('root')); //<App/> es un etiqueta creada desde la clase que creams en App.js. se puede usar asi tambien <App></App>
 
+setTimeout(() => { //queremos un setTimeout para una funsion 
+    console.log('Bears')
+}, 2000);
+
+console.log('Beets');
+console.log('battlestart Galactica')
+
+
+
+
+
+
+
+
+
 // class Animal {
 //     constructor (name, age) {
 //         this.name = name ;
