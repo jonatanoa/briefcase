@@ -5,12 +5,29 @@ import './index.css';
 
 ReactDOM.render(<App/>, document.getElementById('root')); //<App/> es un etiqueta creada desde la clase que creams en App.js. se puede usar asi tambien <App></App>
 
-setTimeout(() => { //queremos un setTimeout para una funsion 
-    console.log('Bears')
-}, 2000);
 
-console.log('Beets');
-console.log('battlestart Galactica')
+
+
+
+//promises
+
+// new Promise ((resolve, reject) => { //se hace una promesa para que primero se ejecute Bears y despues lo demas, lo cual va encerrado en .then
+//     //reject se pone por si la solicitud no se dio
+    
+//     return reject(new Error ('No bears'));
+    
+//     // setTimeout ayuda a retrasar la ejecucion de un componente
+//     setTimeout(() => { //queremos un setTimeout para una funsion 
+//     resolve('Bears, beets, battlestart Galactica');
+// }, 2000);
+// })
+// .then(quote => {
+    
+// console.log (quote);
+// })
+
+// .catch(error => console.log('error', error)) ;
+
 
 
 
